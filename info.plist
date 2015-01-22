@@ -42,8 +42,7 @@
 				<key>runningsubtext</key>
 				<string>Please wait, opening preferences</string>
 				<key>script</key>
-				<string>tell application "System Events"	if exists process "Alfred Preferences" then		tell process "Alfred Preferences"			set frontmost to true		end tell	else		tell application "System Events" to keystroke "," using {command down}
-	end ifend tell</string>
+				<string>activate application "Alfred Preferences"</string>
 				<key>subtext</key>
 				<string>⌘ + ,</string>
 				<key>title</key>
