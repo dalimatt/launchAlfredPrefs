@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>23A5DF7C-E1BB-43E7-B849-4A7F215A0978</string>
+				<string>45F3C001-E120-42B2-A953-6BEF7F98CC2D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -33,18 +33,46 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>preferences alfred</string>
+				<key>runningsubtext</key>
+				<string>Please wait, opening preferences</string>
+				<key>script</key>
+				<string>tell application "System Events"	if exists process "Alfred Preferences" then		tell process "Alfred Preferences"			set frontmost to true		end tell	else		tell application "System Events" to keystroke "," using {command down}
+	end ifend tell</string>
+				<key>subtext</key>
+				<string>⌘ + ,</string>
+				<key>title</key>
+				<string>Alfred Preferences</string>
+				<key>type</key>
+				<integer>6</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>45F3C001-E120-42B2-A953-6BEF7F98CC2D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
-				<integer>3</integer>
-				<key>argumenttext</key>
-				<string>alfred</string>
+				<integer>0</integer>
 				<key>hotkey</key>
 				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>1966080</integer>
+				<integer>0</integer>
 				<key>hotstring</key>
-				<string>A</string>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -59,38 +87,12 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-tell application "Alfred 2"
-	activate
-	tell application "System Events" to keystroke "," using {command down}
-end tell
-tell application "System Events"
-	tell process "Alfred Preferences"
-		set frontmost to true
-		perform action "AXRaise" of "AlfredP Preferences"
-	end tell
-end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>23A5DF7C-E1BB-43E7-B849-4A7F215A0978</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>23A5DF7C-E1BB-43E7-B849-4A7F215A0978</key>
+		<key>45F3C001-E120-42B2-A953-6BEF7F98CC2D</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
