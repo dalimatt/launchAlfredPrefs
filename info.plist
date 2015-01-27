@@ -12,7 +12,18 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>45F3C001-E120-42B2-A953-6BEF7F98CC2D</string>
+				<string>D9F4B4F0-CBEA-46C7-869C-1DF1231EED26</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>D6039296-A630-4A45-B410-0AA10406763A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F4B4F0-CBEA-46C7-869C-1DF1231EED26</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -33,29 +44,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
 				<key>escaping</key>
 				<integer>0</integer>
-				<key>keyword</key>
-				<string>preferences alfred</string>
-				<key>runningsubtext</key>
-				<string>Please wait, opening preferences</string>
 				<key>script</key>
 				<string>activate application "Alfred Preferences"</string>
-				<key>subtext</key>
-				<string>⌘ + ,</string>
-				<key>title</key>
-				<string>Alfred Preferences</string>
 				<key>type</key>
 				<integer>6</integer>
-				<key>withspace</key>
-				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>45F3C001-E120-42B2-A953-6BEF7F98CC2D</string>
+			<string>D9F4B4F0-CBEA-46C7-869C-1DF1231EED26</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -86,17 +85,44 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>preferences</string>
+				<key>subtext</key>
+				<string>PLACE OF INTEREST SIGN
+⌘ + ,</string>
+				<key>text</key>
+				<string>Alfred Preferences</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D6039296-A630-4A45-B410-0AA10406763A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>45F3C001-E120-42B2-A953-6BEF7F98CC2D</key>
+		<key>C209136F-4EAA-479C-A5FD-03EC1F81D983</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
-		<key>C209136F-4EAA-479C-A5FD-03EC1F81D983</key>
+		<key>D6039296-A630-4A45-B410-0AA10406763A</key>
+		<dict>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>D9F4B4F0-CBEA-46C7-869C-1DF1231EED26</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
